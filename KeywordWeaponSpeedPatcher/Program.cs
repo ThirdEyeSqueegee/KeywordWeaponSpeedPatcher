@@ -86,7 +86,7 @@ namespace KeywordWeaponSpeedPatcher
                     patched.Data!.Speed = _settings.Value.WeapTypeClaw;
                 if (weapon.Record.HasKeyword("WeapTypeQuarterstaff", state.LinkCache))
                     patched.Data!.Speed = _settings.Value.WeapTypeQuarterstaff;
-                if (weapon.Record.HasKeyword("WeapTypeBow"), state.LinkCache))
+                if (weapon.Record.HasKeyword("WeapTypeBow", state.LinkCache))
                     patched.Data!.Speed = _settings.Value.WeapTypeBow;
 
                 if (Math.Abs(patched.Data!.Speed - weapon.Record.Data!.Speed) < 0.001f)
